@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base Modern theme -->
+    <style name="Modern" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="android:colorBackground">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorSecondary">@color/accent</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+        <item name="android:buttonStyle">@style/Modern.Button</item>
+        <item name="android:editTextStyle">@style/Modern.EditText.Light</item>
+        <item name="android:radioButtonStyle">@style/Modern.Radio</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Dark variant -->
+    <style name="Modern.PitchBlack" parent="Modern">
+        <item name="colorPrimary">@color/primaryDark</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:colorBackground">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:textColorSecondary">@color/accent</item>
+        <item name="android:editTextStyle">@style/Modern.EditText.Dark</item>
+        <item name="android:checkboxStyle">@style/Modern.CheckBox.Dark</item>
+        <item name="android:radioButtonStyle">@style/Modern.Radio.Dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Headings -->
+    <style name="Modern.Heading" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">36sp</item>
+    </style>
+    <!-- Subheadings -->
+    <style name="Modern.SubHeading" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Text fields -->
+    <style name="Modern.EditText.Light" parent="Modern.EditText">
+        <item name="android:background">@drawable/modern_button</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+    <!-- Which don't comply to theme settings for some reason -->
+    <style name="Modern.EditText.Dark" parent="Modern.EditText.Light">
+        <item name="android:background">@drawable/modern_button</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <!-- And an accent colored version -->
+    <style name="Modern.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/modern_button</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textColorHint">@color/accentDarker</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="Modern.Button" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/modern_button</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+    </style>
+
+    <!-- Checkboxes -->
+    <style name="Modern.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:colorControlNormal">@color/primaryDark</item>
+    </style>
+    <!-- Again, not compliant to text color -->
+    <style name="Modern.CheckBox.Dark" parent="Modern.CheckBox">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:colorControlNormal">@color/primary</item>
+    </style>
+
+    <!-- Radios -->
+    <style name="Modern.Radio" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:strokeColor">@color/primaryDark</item>
+        <item name="android:colorControlNormal">@color/primaryDark</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:button">@drawable/modern_radio</item>
+    </style>
+    <!-- Again, not compliant to text color -->
+    <style name="Modern.Radio.Dark" parent="Modern.Radio">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:strokeColor">@color/primary</item>
+        <!--  -->
+    </style>
+
+    <style name="Modern.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Modern.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Modern.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
