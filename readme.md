@@ -13,7 +13,7 @@ Modern is a simple and modern Android app theme.
 - Has light/dark variants
 - Simple
 
-# Supported elements
+## Supported elements
 
 - TextView
 - Button
