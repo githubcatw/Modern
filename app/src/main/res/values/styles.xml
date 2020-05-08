@@ -1,4 +1,4 @@
-5<resources>
+<resources>
 
     <!-- Base Modern theme -->
     <style name="Modern" parent="Theme.AppCompat.Light.NoActionBar">

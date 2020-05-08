@@ -54,49 +54,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="305dp"
-        android:layout_marginBottom="13dp"
         android:focusable="auto"
         android:text="Click me!"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text" />
-
-    <EditText
-        android:id="@+id/editText"
-        style="@style/Modern.EditText.Light"
-        android:layout_width="380dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="Light"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <EditText
-        android:id="@+id/editText_dark"
-        style="@style/Modern.EditText.Dark"
-        android:layout_width="380dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="9dp"
-        android:ems="10"
-        android:hint="Dark"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText_accented"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/editText_accented"
@@ -104,7 +68,7 @@
         android:layout_width="380dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
         android:hint="Accent colored"
@@ -112,16 +76,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_dark" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="291dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_accented">
 
@@ -155,5 +119,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
