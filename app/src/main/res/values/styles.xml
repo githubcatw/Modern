@@ -27,7 +27,7 @@
     <!-- Text fields -->
     <style name="Modern.EditText.Light" parent="Modern.EditText">
         <item name="android:background">@drawable/modern_button</item>
-        <item name="android:textColor">@color/primary</item>
+        <item name="android:textColor">@color/text</item>
         <item name="android:textColorHint">@color/textSecondary</item>
     </style>
     <!-- And an accent colored version -->
@@ -50,16 +50,16 @@
 
     <!-- Checkboxes -->
     <style name="Modern.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:textColor">@color/primary</item>
         <item name="android:paddingLeft">2dp</item>
         <item name="android:colorControlNormal">@color/primary</item>
+        <item name="android:textColor">@color/text</item>
     </style>
 
     <!-- Radios -->
     <style name="Modern.Radio" parent="Widget.AppCompat.CompoundButton.RadioButton">
-        <item name="android:textColor">@color/primary</item>
-        <item name="android:strokeColor">@color/primary</item>
-        <item name="android:colorControlNormal">@color/primary</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:strokeColor">@color/text</item>
+        <item name="android:colorControlNormal">@color/text</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
