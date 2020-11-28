@@ -108,19 +108,22 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Radio Button 1" />
+            android:text="Radio Button 1"
+            style="@style/Modern.Radio"/>
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Radio Button 2" />
+            android:text="Radio Button 2"
+            style="@style/Modern.Radio"/>
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Radio Button 3" />
+            android:text="Radio Button 3"
+            style="@style/Modern.Radio"/>
     </RadioGroup>
 
     <Button
