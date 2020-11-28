@@ -16,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         night = getIntent().getBooleanExtra("night_mode", false);
-        if (night) {
-            setTheme(R.style.Modern_PitchBlack);
-        } else {
-            setTheme(R.style.Modern);
-        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button mChangeTheme = (Button) findViewById(R.id.toggleThemes);
