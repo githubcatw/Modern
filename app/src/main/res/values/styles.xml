@@ -50,7 +50,7 @@
 
     <!-- Checkboxes -->
     <style name="Modern.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
         <item name="android:colorControlNormal">@color/primary</item>
